@@ -18,7 +18,7 @@ import CheckOut from './pages/CheckOut'
 import OrderPlaced from './pages/OrderPlaced'
 import MyOrders from './pages/MyOrders'
 import useGetMyOrders from './hooks/useGetMyOrders'
-import useUpdateLocation from './hooks/useUpdateLocation'
+// import useUpdateLocation from './hooks/useUpdateLocation'
 import TrackOrderPage from './pages/TrackOrderPage'
 import Shop from './pages/Shop'
 import { useEffect } from 'react'
@@ -30,7 +30,7 @@ function App() {
     const {userData}=useSelector(state=>state.user)
     const dispatch=useDispatch()
   useGetCurrentUser()
-useUpdateLocation()
+// useUpdateLocation()
   useGetCity()
   useGetMyshop()
   useGetShopByCity()
